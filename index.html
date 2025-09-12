@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IUI AIGA Chapter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+      <div class="logo">IUI AIGA</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#join">Join</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="vids/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h1 class="hero-text">IUI AGIA</h1>
+    </section>
+    <!-- White Main Content Section -->
+    <section class="main-content">
+      <!-- About Section -->
+      <div class="home-section cards" id="about">
+        <div class="card">
+          <h2 class="layered-text" data-text="WELCOME">WELCOME</h2>
+          <p>
+            We are the Indiana University Indianapolis chapter of AIGA, the
+            professional association for design. Our mission is to build a
+            creative community where students and professionals thrive.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="layered-text" data-text="FOCUS">FOCUS</h2>
+          <p>
+            Graphic design, branding, web design, typography, and creative
+            collaboration — all in one space to explore, create, and showcase
+            your work.
+          </p>
+        </div>
+      </div>
+
+      <!-- Events Section -->
+      <div class="home-section cards" id="events">
+        <div class="card">
+          <h2 class="split-text">WORKSHOPS</h2>
+          <ul>
+            <li>Hands-on design workshops</li>
+            <li>Portfolio reviews & mentorship</li>
+            <li>Networking & guest speakers</li>
+            <li>Collaborative creative projects</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Join Section -->
+      <div class="home-section cards" id="join">
+        <div class="card highlight">
+          <h2 class="gradient-text">JOIN US</h2>
+          <p>
+            Become a member and gain access to workshops, events, mentorship,
+            and a community of designers. Collaborate, learn, and grow your
+            skills!
+          </p>
+          <a href="#contact" class="cta-button">Become a Member</a>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="home-section cards" id="contact">
+        <div class="card">
+          <h2 class="layered-text" data-text="CONTACT">CONTACT</h2>
+          <p>
+            Reach out to us anytime! Whether you’re curious about upcoming
+            events, membership, or just want to chat about design, we’d love to
+            hear from you.
+          </p>
+          <p>
+            Email: <a href="mailto:iui.aiga@example.com">iui.aiga@example.com</a
+            ><br />
+            Instagram:
+            <a href="https://instagram.com/iui_aiga" target="_blank"
+              >@iui_aiga</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>
