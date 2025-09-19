@@ -754,7 +754,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   height: 100vh;         /* full viewport height */
   display: flex;    
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   justify-content: center; /* center horizontally */
   align-items: center;     /* center vertically */
   overflow: hidden;
@@ -841,7 +841,7 @@ h1, h2, h3, h4, h5, h6, p {
 
   .banner {
     height: 70vh;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
    
   }
 
