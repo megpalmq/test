@@ -479,7 +479,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1rem;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 440px) {
 
   .left img {
     width: 120px;
@@ -700,6 +700,38 @@ h1, h2, h3, h4, h5, h6, p {
 
   .event-card p {
     font-size: 0.9rem;
+  }
+}
+/* Tiny phone adjustments */
+@media (max-width: 480px) {
+  #events {
+    padding-top: 80px;
+  }
+
+  .background-title {
+    left: -10%;
+    transform: translateX(-50%) scale(2);
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+
+  .events-container {
+    gap: 1.5rem;
+    padding-bottom: 150px;
+  }
+
+  .event-card img {
+    width: 95%;
+    height: auto;
+  }
+
+  .event-card h3 {
+    font-size: 1rem;
+  }
+
+  .event-card p {
+    font-size: 0.8rem;
   }
 }
 
