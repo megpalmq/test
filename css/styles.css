@@ -1164,7 +1164,12 @@ button:hover {
 /* Mobile - 480px */
 @media (max-width: 480px) {
   .branding {
-    max-width: 200px;
+    max-width: 300px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #contact .container3 .left-panel .branding .chat {
@@ -1180,6 +1185,7 @@ button:hover {
 
   .right-panel {
     padding: 20px 15px;
+    
   }
 
   #contact h1 {
@@ -1338,6 +1344,7 @@ button:hover {
 
   .footer-brand h2 {
     font-size: 1.1rem;
+    
   }
 
   .footer-links h3,
