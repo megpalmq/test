@@ -224,13 +224,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Main Content */
-.main-content {
-  background: linear-gradient(#39B44A 10%, #ffffff 40%);
-}
+
 
 .main-content {
   position: relative;
-  min-height: 400vh; /* enough scroll space for sequence */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container {
