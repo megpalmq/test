@@ -750,7 +750,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 100px;
   margin-bottom: 2rem;
   color: #33ac28; 
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
   text-align: center;
 }
 
@@ -936,16 +935,18 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .banner .slider {
-    width: 120px;
-    height: 150px;
+    width: 180px;  /* slightly bigger */
+    height: 220px; /* slightly bigger */
+    margin: 0 auto;
   }
 
   .slider .item {
-    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(250px);
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(300px); 
+    /* bigger translateZ keeps images larger while still leaving gap */
   }
 
   .slider .item p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .nav2.left2, .nav2.right2 {
@@ -953,6 +954,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0.3rem 0.6rem;
   }
 }
+
 
 /* Left panel styling */
 .left-panel {
