@@ -121,14 +121,13 @@ document.querySelectorAll(".split-text").forEach((text) => {
 });
 const images = gsap.utils.toArray(".left img");
 
-// timeline for scroll-driven sequence
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".main-content",
     start: "top top",
-    end: "+=3000", // length of scroll (px)
-    scrub: true,
-    pin: ".container", // keeps container fixed while animating
+    end: () => "+=" + document.querySelector(".container").offsetHeight,
+    scrub: 0.8,
+    pin: ".container",
     anticipatePin: 1,
   },
 });
