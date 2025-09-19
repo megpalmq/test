@@ -923,7 +923,6 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-/* Small devices / phones - 480px */
 @media (max-width: 480px) {
   #board h1 {
     font-size: 2.5rem;
@@ -935,14 +934,14 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .banner .slider {
-    width: 180px;  /* slightly bigger */
-    height: 220px; /* slightly bigger */
+    width: 160px;  /* a bit smaller to allow more perspective gap */
+    height: 220px; 
     margin: 0 auto;
   }
 
   .slider .item {
-    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(300px); 
-    /* bigger translateZ keeps images larger while still leaving gap */
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity)))) translateZ(350px); 
+    /* bigger translateZ = more gap between items */
   }
 
   .slider .item p {
@@ -954,7 +953,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0.3rem 0.6rem;
   }
 }
-
 
 /* Left panel styling */
 .left-panel {
