@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: white;
 }
 .left img:nth-child(3) {
-  top: 750px;
+  bottom: 0px;
   left: 40px;
   rotate: 9deg;
   padding-bottom: 10px;
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #333;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
 
 
   .left, .right {

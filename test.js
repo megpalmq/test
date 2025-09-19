@@ -129,6 +129,7 @@ let tl = gsap.timeline({
     scrub: 0.8,
     pin: ".container",
     anticipatePin: 1,
+    
   },
 });
 
