@@ -12,18 +12,34 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Sticky Navbar -->
-    <header class="navbar">
-      <div class="logo"></div>
+  <header class="navbar">
+  <!-- Logo on the left -->
+  <div class="logo"></div>
 
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
-        <a href="#board">Board</a>
-        <a href="#join">Join</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+  <!-- Hamburger for mobile -->
+  <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav class="nav-links">
+  <a href="#about">About</a>
+  <a href="#events">Events</a>
+  <a href="#board">Board</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- Fullscreen overlay menu (mobile) -->
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#board">Board</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+
+
     <section class="hero">
       <video class="hero-video" autoplay muted loop playsinline>
         <source src="vids/herronVideo.mp4" type="video/mp4" />
@@ -104,7 +120,210 @@
         </div>
       </div>
     </div>
-    <div id="board"></div>
+    <section id="board">
+      <h1>Meet the Board</h1>
+      <div class="banner">
+        <button class="nav2 left2">&#10094;</button>
+        <div class="slider" style="--quantity: 11">
+          <div class="item" style="--position: 1">
+            <img src="images/board/Amrita.png" alt="Amrita Datta" />
+            <strong>Amrita Datta</strong>
+            <p>Design Professor</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/amritadatta1711/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="images/board/Leilani.png" alt="Leilani Turner" />
+            <strong>Leilani Turner</strong>
+            <p>President</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/leilani-f-turner/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="images/board/Annika.png" alt="Annika Solis" />
+            <strong>Annika Solis</strong>
+            <p>President</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/annikasolis/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 4">
+            <img
+              src="images/board/Katharine.png"
+              alt="Katharine Brunette"
+              style="--position: 4"
+            />
+            <strong>Katharine Brunette</strong>
+            <p>Treasurer</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/katharinebrunette/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="images/board/Riya.png" alt="Riya Patel" />
+            <strong>Riya Patel</strong>
+            <p>Secretary</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/-riya-patel-/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="images/board/Sierra.png" alt="Sierra Pruneski" />
+            <strong>Sierra Pruneski</strong>
+            <p>Event Coordinator</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/sierra-pruneski-834464328/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="images/board/Megan.png" alt="Megan Palmquist" />
+            <strong>Megan Palmquist</strong>
+            <p>Event Coordinator</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/megan-palmquist/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="images/board/Marissa.png" alt="Marissa Eckert" />
+            <strong>Marissa Eckert</strong>
+            <p>Communications</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/marissa-eckert-b9b7812b1/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="images/board/Nicholas.png" alt="Nicholas Gilbert" />
+            <strong>Nicholas Gilbert</strong>
+            <p>Communications</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/nicholas-gilbert-114398267/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="images/board/Ryann.png" alt="Ryann Smith" />
+            <strong>Ryann Smith</strong>
+            <p>Communications</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/ryanndsmith/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item" style="--position: 11">
+            <img src="images/board/Jordan.png" alt="Jordan Cornelius" />
+            <strong>Jordan Cornelius</strong>
+            <p>Outreach</p>
+            <div class="socialLinks">
+              <a href="https://www.linkedin.com/in/jordan-cornelius-132845363/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button class="nav2 right2">&#10095;</button>
+      </div>
+    </section>
+    <section id="contact">
+       <div class="container3 ">
+    <div class="left-panel gradient-background">
+      <div class="branding">
+        <h1 class="chat">Let's Chat!</h1>
+        <p>
+          Have questions? Want to learn how to join AIGA Herron? Drop us a line.
+        </p>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h1>Contact Us</h1>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mzzanvaw"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    </section>
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>AIGA Herron</h2>
+      <p>Design. Connect. Inspire.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#board">Meet the Board</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+
+    <div class="footer-socials">
+      <h3>Follow Us!</h3>
+      <div class="social-icons">
+        <a href="https://discord.com/invite/vhu6UqzGXq"
+          ><i class="fab fa-discord"></i
+        ></a>
+        <a href="https://www.linkedin.com/company/aiga-at-herron"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/aigaatherron/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://thespot.iupui.edu/organization/aigaherron"
+          ><i class="fa-solid fa-paw"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 AIGA Club. All Rights Reserved.</p>
+    <p class="credit">Web Design & Development by <span><a href="https://www.meganpalmquist.com/">Megan Palmquist</a></span></p>
+  </div>
+</footer>
+
     <!-- GSAP -->
     <!-- Core GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

@@ -1,6 +1,30 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 gsap.set(".hero-text", { scale: 1, opacity: 1 });
 gsap.set(".hero-video", { opacity: 1 });
+const hamburger = document.getElementById('hamburger');
+const overlay = document.getElementById('overlay');
+const overlayMenu = document.querySelector('.overlay-menu'); // the actual menu
+const overlayLinks = document.querySelectorAll('.overlay-menu a');
+
+// Toggle overlay when hamburger is clicked
+hamburger.addEventListener('click', () => {
+  overlay.classList.toggle('active');
+});
+
+// Close overlay when any link is clicked
+overlayLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    overlay.classList.remove('active');
+  });
+});
+
+// Close overlay when clicking outside the menu
+overlay.addEventListener('click', (e) => {
+  if (!overlayMenu.contains(e.target)) {
+    overlay.classList.remove('active');
+  }
+});
+
 
 // Hero Zoom
 
@@ -143,3 +167,37 @@ gsap.fromTo(".background-title",
     }
   }
 );
+if (window.innerWidth <= 768) {
+  gsap.fromTo(
+    ".background-title",
+    { scale: 1 },
+    {
+      scale: 0.7, // scale down on scroll
+      scrollTrigger: {
+        trigger: "#events",
+        start: "top top",
+        end: "top+=200 top", // scroll distance over which it scales
+        scrub: true,
+      },
+    }
+  );
+}
+
+  const slider = document.querySelector('.slider');
+  const quantity = parseInt(getComputedStyle(slider).getPropertyValue('--quantity'));
+  let angle = 0;
+  let current = 0;
+
+  function rotateCarousel(direction) {
+    current = (current + direction + quantity) % quantity; 
+    angle = (360 / quantity) * current;
+    slider.style.transform = `perspective(1000px) rotateY(-${angle}deg)`;
+  }
+
+  document.addEventListener('click', (e) => {
+    if (e.clientX < window.innerWidth / 2) {
+      rotateCarousel(-1);
+    } else {
+      rotateCarousel(1);
+    }
+  });
